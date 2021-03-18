@@ -1,8 +1,18 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 97vh;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+#search-by{
+  background-color: silver;
+}
+.dropdown-item{
+  text-align: center;
 }

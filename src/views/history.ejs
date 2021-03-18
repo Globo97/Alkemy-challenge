@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs")%>
+    <title></title>
+  </head>
+  <body class="justify-content-start">
+    <header><%- include("./partials/header.ejs")%></header>
+    <main class="container-fluid d-flex flex-column justify-content-between align-items-center p-0">
+      <div class="dropdown w-100 row">
+        <button
+          id="search-by"
+          class="btn btn-secondary dropdown-toggle w-100"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Ordenar por
+        </button>
+        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton ">
+          <a class="dropdown-item" href="#">Tipo</a>
+          <a class="dropdown-item" href="#">Fecha</a>
+          <a class="dropdown-item" href="#">Concepto</a>
+          <a class="dropdown-item" href="#">Monto</a>
+        </div>
+      </div>
+
+        <h3>Historial de operaciones</h3>
+        
+    </main>
+    <footer class="w-100"><%- include("./partials/footer.ejs")%></footer>
+  </body>
+</html>
