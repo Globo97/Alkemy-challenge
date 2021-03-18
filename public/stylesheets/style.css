@@ -3,7 +3,7 @@ body {
   background-color: whitesmoke;
   display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     min-height: 97vh;
 }
 
@@ -15,4 +15,15 @@ a {
 }
 .dropdown-item{
   text-align: center;
+}
+
+.void{
+border:none;
+background-color: inherit;
+width: 75%;
+text-align: center;
+}
+
+.void:disabled{
+  color: inherit;
 }

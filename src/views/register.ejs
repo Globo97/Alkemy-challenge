@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head.ejs")%>
+    <title></title>
+  </head>
+  <body>
+    <header><%- include("./partials/header.ejs")%></header>
+    <main class="container-fluid d-flex flex-column align-items-center ">
+      <h2 class="text-center mt-5">Registro</h2>
+      <form class="container m-5 col-9">
+        <div class="form-group ">
+          <label for="formGroupExampleInput">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Example input"
+          />
+        </div>
+        <div class="form-group ">
+          <label for="formGroupExampleInput2">Contraseña</label>
+          <input
+            type="number"
+            class="form-control"
+            id="formGroupExampleInput2"
+            placeholder="Another input"
+          />
+        </div>
+        
+ <button type="submit" class="btn btn-primary my-3 mx-0 w-100">Login</button>
+      </form>
+    <p>¿Todavia no tenes una cuenta? Registrate haciendo click <a href="/usuarios/registro">aquí</a> </p>
+     <p>¿Olvidaste tu contraseña? Para recuperarla hace click <a href="/usuarios/registro">aquí</a> </p>
+    </main>
+    <footer class=" w-100"><%- include("./partials/footer.ejs")%></footer>
+  </body>
+</html>

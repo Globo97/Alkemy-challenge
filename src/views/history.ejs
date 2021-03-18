@@ -4,9 +4,11 @@
     <%- include("./partials/head.ejs")%>
     <title></title>
   </head>
-  <body class="justify-content-start">
+  <body>
     <header><%- include("./partials/header.ejs")%></header>
-    <main class="container-fluid d-flex flex-column justify-content-between align-items-center p-0">
+    <main
+      class="container-fluid d-flex flex-column justify-content-between align-items-center p-0"
+    >
       <div class="dropdown w-100 row">
         <button
           id="search-by"
@@ -27,8 +29,89 @@
         </div>
       </div>
 
-        <h3>Historial de operaciones</h3>
-        
+      <h3 class="my-5">Historial de operaciones</h3>
+      <nav id="filters " class="row w-100">
+        <p class="offset-4">Filtrar por:</p>
+        <div class="col-4">
+          <button type="button" class="btn badge badge-primary">
+            +$10.000
+          </button>
+          <button type="button" class="btn badge badge-secondary">-$500</button>
+          <button type="button" class="btn badge badge-success">
+            Ingresos
+          </button>
+          <button type="button" class="btn badge badge-danger">Egresos</button>
+          <button type="button" class="btn badge badge-light">
+            Operaciones de dia
+          </button>
+          <button type="button" class="btn badge badge-dark">
+            Operaciones de noche
+          </button>
+        </div>
+      </nav>
+
+      <form action=""></form>
+      <table class="table my-5">
+        <thead class="thead-dark text-center">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Concepto</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Tipo</th>
+            <th scope="col">Valor</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <form action="">
+            <tr>
+              <th scope="row">1</th>
+              <td><input disabled class="void" type="text" value="Papas"></td>
+              <td><input disabled class="void" type="text" value="Papas"></td>
+              <td><input disabled class="void" type="text" value="Papas"></td>
+              <td><input disabled class="void" type="text" value="Papas"></td>
+              <td>
+                <button class="bg-transparent border-0">
+                  <i class="fas fa-pencil-alt text-primary"></i>
+                </button>
+                <button class="bg-transparent border-0">
+                  <i class="fas fa-trash text-danger"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+              <td>@mdo</td>
+              <td>
+                <button class="bg-transparent border-0">
+                  <i class="fas fa-pencil-alt text-primary"></i>
+                </button>
+                <button class="bg-transparent border-0">
+                  <i class="fas fa-trash text-danger"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+              <td>@mdo</td>
+              <td>
+                <button class="bg-transparent border-0 bg-success">
+                  <i class="fas fa-pencil-alt text-primary"></i>
+                </button>
+                <button class="bg-transparent border-0">
+                  <i class="fas fa-trash text-danger"></i>
+                </button>
+              </td>
+            </tr>
+          </form>
+        </tbody>
+      </table>
     </main>
     <footer class="w-100"><%- include("./partials/footer.ejs")%></footer>
   </body>
